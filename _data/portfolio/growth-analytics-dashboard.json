@@ -1,0 +1,11 @@
+{
+  "title": "Growth Analytics Dashboard",
+  "client": "FinTech Startup",
+  "category": "analytics",
+  "description": "Data Analytics & Strategy",
+  "result": "+340% ROI",
+  "gradientFrom": "indigo-500",
+  "gradientTo": "blue-400",
+  "icon": "chart-line-up",
+  "order": 3
+}

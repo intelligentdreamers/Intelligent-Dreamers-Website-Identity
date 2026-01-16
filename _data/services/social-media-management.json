@@ -1,0 +1,14 @@
+{
+  "title": "Social Media Management",
+  "description": "Complete management for Instagram, TikTok, LinkedIn, and more. We build and nurture your online community so you can focus on your business.",
+  "icon": "users-three",
+  "color": "pink",
+  "featured": false,
+  "order": 1,
+  "features": [
+    "Community Engagement",
+    "Content Scheduling",
+    "Brand Voice & Strategy",
+    "Crisis Management"
+  ]
+}

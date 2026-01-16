@@ -1,0 +1,14 @@
+{
+  "title": "Data Analytics",
+  "description": "The \"Intelligent\" in our name. We transform raw data into actionable insights that drive growth and maximize your ROI.",
+  "icon": "chart-pie-slice",
+  "color": "blue",
+  "featured": false,
+  "order": 3,
+  "features": [
+    "Performance Dashboards",
+    "Audience & Market Insights",
+    "Competitor Analysis",
+    "ROI & Conversion Tracking"
+  ]
+}

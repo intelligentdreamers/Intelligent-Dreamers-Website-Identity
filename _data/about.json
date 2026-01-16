@@ -1,0 +1,25 @@
+{
+  "label": "Our Approach",
+  "headline": "Where creativity meets intelligence.",
+  "description": "We believe great digital presence requires three pillars: strategic social media management, captivating content, and data-driven decisions.",
+  "features": [
+    {
+      "title": "Community First",
+      "description": "We manage your social presence with authentic engagement that builds loyal communities.",
+      "icon": "users-three",
+      "color": "pink"
+    },
+    {
+      "title": "Scroll-Stopping Content",
+      "description": "From stunning visuals to professional video production, we create content that demands attention.",
+      "icon": "video-camera",
+      "color": "mint"
+    },
+    {
+      "title": "Data-Driven Growth",
+      "description": "Every decision is backed by analytics. We track, measure, and optimize for real results.",
+      "icon": "chart-line-up",
+      "color": "blue"
+    }
+  ]
+}

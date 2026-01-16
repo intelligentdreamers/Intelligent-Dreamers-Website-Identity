@@ -1,0 +1,8 @@
+{
+  "stats": [
+    { "number": "50+", "label": "Brands Managed", "color": "pink" },
+    { "number": "500+", "label": "Videos Produced", "color": "mint" },
+    { "number": "10M+", "label": "Data Points Analyzed", "color": "blue" },
+    { "number": "200%", "label": "Avg Client Growth", "color": "yellow" }
+  ]
+}

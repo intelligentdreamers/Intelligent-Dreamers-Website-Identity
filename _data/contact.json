@@ -1,0 +1,11 @@
+{
+  "badge": "New Client Openings",
+  "headline": "Let's Create Something Cool",
+  "description": "Ready to upgrade your feed? Fill out the form below.",
+  "options": [
+    { "label": "Social Media Management", "color": "pink" },
+    { "label": "Content Creation", "color": "mint" },
+    { "label": "Video Production", "color": "mint" },
+    { "label": "Data Analytics", "color": "blue" }
+  ]
+}

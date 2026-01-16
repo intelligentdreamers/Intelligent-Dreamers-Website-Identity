@@ -1,0 +1,14 @@
+{
+  "title": "Content Creation & Video",
+  "description": "From concept to final cut. We create scroll-stopping content including photography, graphics, and professional video production.",
+  "icon": "film-strip",
+  "color": "mint",
+  "featured": true,
+  "order": 2,
+  "features": [
+    "Graphics & Brand Assets",
+    "Reels, TikToks & Shorts",
+    "YouTube & Long-form Video",
+    "Professional Editing & Motion"
+  ]
+}

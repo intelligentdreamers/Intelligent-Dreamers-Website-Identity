@@ -1,0 +1,140 @@
+backend:
+  name: git-gateway
+  branch: main
+
+# Allows you to preview changes before publishing
+publish_mode: editorial_workflow
+
+# Media files location
+media_folder: "images"
+public_folder: "/images"
+
+# Site URL for previews
+site_url: https://intelligentdreamers.art
+display_url: https://intelligentdreamers.art
+
+# Logo in the CMS
+logo_url: https://intelligentdreamers.art/images/logo.png
+
+collections:
+  # Site Settings
+  - name: "settings"
+    label: "Site Settings"
+    files:
+      - name: "general"
+        label: "General Settings"
+        file: "_data/settings.json"
+        fields:
+          - { label: "Site Title", name: "siteTitle", widget: "string", default: "Intelligent Dreamers" }
+          - { label: "Site Tagline", name: "tagline", widget: "string", default: "Social Media | Content | Analytics" }
+          - { label: "Contact Email", name: "email", widget: "string" }
+          - { label: "Phone Number", name: "phone", widget: "string", required: false }
+
+      - name: "social"
+        label: "Social Media Links"
+        file: "_data/social.json"
+        fields:
+          - { label: "Instagram URL", name: "instagram", widget: "string", required: false }
+          - { label: "TikTok URL", name: "tiktok", widget: "string", required: false }
+          - { label: "YouTube URL", name: "youtube", widget: "string", required: false }
+          - { label: "LinkedIn URL", name: "linkedin", widget: "string", required: false }
+
+  # Homepage Content
+  - name: "homepage"
+    label: "Homepage Content"
+    files:
+      - name: "hero"
+        label: "Hero Section"
+        file: "_data/hero.json"
+        fields:
+          - { label: "Badge Text", name: "badge", widget: "string", default: "Social Media | Video | Analytics" }
+          - { label: "Headline Line 1", name: "headline1", widget: "string", default: "Dream it." }
+          - { label: "Headline Line 2", name: "headline2", widget: "string", default: "We create it." }
+          - { label: "Description", name: "description", widget: "text" }
+          - { label: "Button 1 Text", name: "button1Text", widget: "string", default: "See Our Content" }
+          - { label: "Button 1 Link", name: "button1Link", widget: "string", default: "#portfolio" }
+          - { label: "Button 2 Text", name: "button2Text", widget: "string", default: "How We Help" }
+          - { label: "Button 2 Link", name: "button2Link", widget: "string", default: "#services" }
+
+      - name: "about"
+        label: "About Section"
+        file: "_data/about.json"
+        fields:
+          - { label: "Section Label", name: "label", widget: "string", default: "Our Approach" }
+          - { label: "Headline", name: "headline", widget: "string", default: "Where creativity meets intelligence." }
+          - { label: "Description", name: "description", widget: "text" }
+          - label: "Features"
+            name: "features"
+            widget: "list"
+            max: 3
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+              - { label: "Icon", name: "icon", widget: "string", hint: "Phosphor icon name (e.g., users-three, video-camera, chart-line-up)" }
+              - { label: "Color", name: "color", widget: "select", options: ["pink", "mint", "blue"] }
+
+      - name: "stats"
+        label: "Stats Section"
+        file: "_data/stats.json"
+        fields:
+          - label: "Statistics"
+            name: "stats"
+            widget: "list"
+            max: 4
+            fields:
+              - { label: "Number", name: "number", widget: "string", hint: "e.g., 50+, 10M+, 200%" }
+              - { label: "Label", name: "label", widget: "string" }
+              - { label: "Color", name: "color", widget: "select", options: ["pink", "mint", "blue", "yellow"] }
+
+  # Services
+  - name: "services"
+    label: "Services"
+    folder: "_data/services"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Service Name", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "text" }
+      - { label: "Icon", name: "icon", widget: "string", hint: "Phosphor icon name" }
+      - { label: "Color", name: "color", widget: "select", options: ["pink", "mint", "blue"] }
+      - { label: "Featured", name: "featured", widget: "boolean", default: false, hint: "Show 'Most Popular' badge" }
+      - { label: "Order", name: "order", widget: "number", default: 1 }
+      - label: "Features List"
+        name: "features"
+        widget: "list"
+        field: { label: "Feature", name: "feature", widget: "string" }
+
+  # Portfolio Projects
+  - name: "portfolio"
+    label: "Portfolio"
+    folder: "_data/portfolio"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Project Title", name: "title", widget: "string" }
+      - { label: "Client Name", name: "client", widget: "string" }
+      - { label: "Category", name: "category", widget: "select", options: ["social", "video", "analytics"] }
+      - { label: "Description", name: "description", widget: "text" }
+      - { label: "Result", name: "result", widget: "string", hint: "e.g., +500k Views, +120% Engagement" }
+      - { label: "Gradient Start Color", name: "gradientFrom", widget: "string", default: "purple-500" }
+      - { label: "Gradient End Color", name: "gradientTo", widget: "string", default: "pink-500" }
+      - { label: "Icon", name: "icon", widget: "string", hint: "Phosphor icon (e.g., tiktok-logo, instagram-logo, chart-line-up)" }
+      - { label: "Order", name: "order", widget: "number", default: 1 }
+
+  # Contact Form Settings
+  - name: "contact"
+    label: "Contact Section"
+    files:
+      - name: "contact"
+        label: "Contact Settings"
+        file: "_data/contact.json"
+        fields:
+          - { label: "Badge Text", name: "badge", widget: "string", default: "New Client Openings" }
+          - { label: "Headline", name: "headline", widget: "string", default: "Let's Create Something Cool" }
+          - { label: "Description", name: "description", widget: "string", default: "Ready to upgrade your feed? Fill out the form below." }
+          - label: "Service Options"
+            name: "options"
+            widget: "list"
+            fields:
+              - { label: "Label", name: "label", widget: "string" }
+              - { label: "Color", name: "color", widget: "select", options: ["pink", "mint", "blue", "yellow"] }
